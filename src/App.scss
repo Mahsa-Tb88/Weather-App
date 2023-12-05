@@ -1,0 +1,43 @@
+.app {
+  .title {
+    background-color: #0f172a;
+    color: #9fa2aa;
+    margin-bottom: 0;
+  }
+
+  .main {
+    background-color: #1e293b;
+    padding: 2rem 0;
+  }
+
+  .searchbtn {
+    background-color: #4f46e5;
+    height: 2.5rem;
+    border: none;
+    padding: 0 1rem;
+    &:hover{
+        background-color:#0f172a;
+    }
+  }
+
+  .serachInput{
+    padding: 0.3rem;
+    border: 1px solid #fff;
+    height: 2.5rem;
+    outline: none;
+    padding-left: 1rem;
+  }
+  .btngroup {
+    background-color: #4f46e5;
+
+    .far {
+      background-color: #1e293b;
+      color: #4f46e5;
+    }
+    .cel{
+        &:hover{
+            border: 1px solid #0f172a;
+        }
+    }
+  }
+}
