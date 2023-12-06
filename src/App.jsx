@@ -9,6 +9,7 @@ export default function App() {
   const [isCelsius, setIsCelsius] = useState(false);
 
   const [city, setCity] = useState({
+    name: "",
     country: "",
     temp: "",
     tempMin: "",
@@ -70,6 +71,7 @@ export default function App() {
       // const cityTime = date.toLocaleString("en-US", options);
       setCity({
         ...city,
+        name: cityInfo.name,
         country: cityInfo.sys.country,
         temp: operationNum(cityInfo.main.temp),
         tempMax: operationNum(cityInfo.main.temp_max),
@@ -106,7 +108,7 @@ export default function App() {
     <div className=" app">
       <div className="d-flex justify-content-start align-items-center title">
         <img
-        className="logo"
+          className="logo"
           alt="logo"
           src="https://miguel-ch.github.io/assets_repo/weather//logo_earth.svg"
         />

@@ -7,7 +7,7 @@ export default function Info({ search, city }) {
         <div className="col-3">
           <h2 className="text-white display-1 fw-bold">{city.temp}°</h2>
           <p className="text-white fs-2 ">
-            {search}, {city.country}
+            {city.name}, {city.country}
           </p>
         </div>
         <div className="col-3 text-center">
