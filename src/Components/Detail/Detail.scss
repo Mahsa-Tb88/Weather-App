@@ -1,0 +1,14 @@
+.detail {
+  .section {
+    background-color: #334155;
+    h5,
+    p {
+      color: #99a0aa;
+    }
+  }
+  .wind,
+  .Humidity,
+  .Cloudiness {
+    width: 8rem;
+  }
+}

@@ -3,6 +3,10 @@
     background-color: #0f172a;
     color: #9fa2aa;
     margin-bottom: 0;
+    padding-left: 1rem;
+  }
+  .logo{
+    width: 2rem;
   }
 
   .main {
@@ -27,17 +31,5 @@
     outline: none;
     padding-left: 1rem;
   }
-  .btngroup {
-    background-color: #4f46e5;
 
-    .far {
-      background-color: #1e293b;
-      color: #4f46e5;
-    }
-    .cel{
-        &:hover{
-            border: 1px solid #0f172a;
-        }
-    }
-  }
 }

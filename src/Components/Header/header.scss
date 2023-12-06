@@ -1,0 +1,15 @@
+.header {
+  .btngroup {
+    background-color: #4f46e5;
+
+    .select {
+      background-color: #1e293b;
+      color: #4f46e5;
+    }
+    .diselect {
+      &:hover {
+        border: 1px solid #0f172a;
+      }
+    }
+  }
+}
