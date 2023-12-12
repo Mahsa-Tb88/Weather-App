@@ -9,9 +9,12 @@ export default function Header({ setIsCelsius, isCelsius, setSearch }) {
     setSearch(inputValue);
   }
   return (
-    <div className="row header">
-      <div className="col-8">
-        <form onSubmit={submitHandler}>
+    <div className=" header row">
+      <div className="col-12 col-lg-8 px-lg-0">
+        <form
+          onSubmit={submitHandler}
+          className="mb-3 d-flex justify-content-lg-start justify-content-center align-items-center "
+        >
           <input
             type="text"
             placeholder="city name ..."
@@ -19,13 +22,16 @@ export default function Header({ setIsCelsius, isCelsius, setSearch }) {
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
           />
-          <button className=" text-white searchbtn mx-2 rounded-2">
+          <button
+            type="button"
+            className="btn btn-sm text-white searchbtn   mx-2 rounded-2"
+          >
             Search
           </button>
         </form>
       </div>
-      <div className="col-4">
-        <div className="row btngroup p-1 justify-content-center rounded-2">
+      <div className="col-12 col-lg-4 ">
+        <div className="row btngroup  py-1 ">
           <div className="col-6 text-center">
             <button className={selectFar} onClick={() => setIsCelsius(false)}>
               Fahrenheit

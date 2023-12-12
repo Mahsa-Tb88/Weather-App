@@ -22,16 +22,12 @@ export default function App() {
     humidity: "",
     clouds: "",
     timezone: "",
+    weatherIconUrl: "",
   });
 
   useEffect(() => {
     async function fetchData() {
       const cityInfo = await getCity(search);
-
-      // const date = new Date(cityInfo.dt * 1000);
-      // const utcTime = Date.now();
-      // const localTimeOffset = cityInfo.timezone * 1000;
-      // const date = new Date(utcTime + localTimeOffset);
 
       const d = new Date();
       const offset = d.getTimezoneOffset() * 60;
@@ -61,6 +57,7 @@ export default function App() {
         humidity: cityInfo.main.humidity,
         clouds: cityInfo.clouds.all,
         timezone: formattedDate,
+        weatherIconUrl: `https://openweathermap.org/img/wn/${cityInfo.weather[0].icon}@2x.png`,
       });
     }
     fetchData();

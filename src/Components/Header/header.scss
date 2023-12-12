@@ -1,6 +1,9 @@
 .header {
   .btngroup {
     background-color: #4f46e5;
+    @media (min-width: 576px  ) { 
+      border-radius: 8px;
+     }
 
     .select {
       background-color: #1e293b;
