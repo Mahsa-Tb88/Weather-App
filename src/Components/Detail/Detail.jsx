@@ -1,6 +1,5 @@
 import React from "react";
-import "./detaill.scss";
-"yes"
+import "./detail.scss";
 export default function Detail({ city }) {
   return (
     <div className="detail ">
