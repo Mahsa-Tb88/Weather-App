@@ -4,27 +4,11 @@
     rgba(6, 179, 211, 1) 0%,
     rgba(30, 66, 176, 1) 100%
   );
-  @media (min-width: 576px  ) { 
+  @media (min-width: 576px) {
     border-radius: 8px;
-   }
+  }
 }
 
-.imgLogo{
+.imgLogo {
   width: 10rem;
 }
-
-
-// .detail {
-//   .section {
-//     background-color: #334155;
-//     h5,
-//     p {
-//       color: #99a0aa;
-//     }
-//   }
-//   .wind,
-//   .Humidity,
-//   .Cloudiness {
-//     width: 8rem;
-//   }
-// }
