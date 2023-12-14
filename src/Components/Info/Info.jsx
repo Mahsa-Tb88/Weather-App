@@ -3,9 +3,9 @@ import "./info.scss";
 export default function Info({ isCelsius, city }) {
   function operationNum(num) {
     if (isCelsius) {
-      return (num - 273).toFixed(1);
+      return (num - 273).toFixed(0);
     } else {
-      return (1.8 * (num - 273) + 32).toFixed(1);
+      return (1.8 * (num - 273) + 32).toFixed(0);
     }
   }
   console.log(city);
