@@ -22,7 +22,11 @@ export default function Detail({ city }) {
         <div className="col-lg-4 mb-3  ">
           <div className="section rounded-2 p-4 d-flex justify-content-between align-items-center">
             <div>
-              <img className="Humidity" alt="logo" src="https://miguel-ch.github.io/assets_repo/weather//humidity_2.svg" />
+              <img
+                className="Humidity"
+                alt="logo"
+                src="https://miguel-ch.github.io/assets_repo/weather//humidity_2.svg"
+              />
             </div>
             <div>
               <h5 className="fs-3">Humidity</h5>
@@ -33,7 +37,11 @@ export default function Detail({ city }) {
         <div className="col-lg-4 mb-3  ">
           <div className="section rounded-2 p-4 d-flex justify-content-between align-items-center">
             <div>
-              <img className="Cloudiness" alt="logo" src="https://miguel-ch.github.io/assets_repo/weather//cloudiness.svg" />
+              <img
+                className="Cloudiness"
+                alt="logo"
+                src="https://miguel-ch.github.io/assets_repo/weather//cloudiness.svg"
+              />
             </div>
             <div>
               <h5 className="fs-3">Cloudiness</h5>

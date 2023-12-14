@@ -33,7 +33,6 @@ export default function App() {
       const offset = d.getTimezoneOffset() * 60;
       const date = new Date((cityInfo.dt + offset + cityInfo.timezone) * 1000);
 
-      // Format the date and time
       const options = {
         month: "short",
         day: "numeric",
