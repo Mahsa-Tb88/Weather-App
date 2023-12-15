@@ -23,7 +23,7 @@ export default function Header({ setIsCelsius, isCelsius, setSearch }) {
             onChange={(e) => setInputValue(e.target.value)}
           />
           <button
-            type="button"
+            type="submit"
             className="btn btn-sm text-white searchbtn   mx-2 rounded-2"
           >
             Search
